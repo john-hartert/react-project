@@ -5,7 +5,7 @@ import './index.css';
 global.jQuery = require('jquery');
 require('bootstrap');
 require('bootstrap/dist/css/bootstrap.css');
-// import './index.css';
+
 
 
 ReactDOM.render(
