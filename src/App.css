@@ -7,12 +7,16 @@
   float: right;
 }
 
-.output-display {
-  margin: 1em;
+.post-body{
+  margin: 1em 20%;
 }
 
 @media screen and (max-width: 900px) {
   .post-editor{
     margin: 1em;
   }
+  .post-body{
+    margin: 1em;
+  }
+
 }
