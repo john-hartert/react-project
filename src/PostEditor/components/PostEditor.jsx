@@ -23,7 +23,9 @@ createPost() {
     this.props.addPost(this.state.newPostBody);
     this.setState({
     newPostBody: '',
+    })
 }
+
 
 
     render() {

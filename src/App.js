@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Post from './Post/component/Post';
+import PostEditor from './PostEditor/components/PostEditor';
 import './App.css';
 
 
