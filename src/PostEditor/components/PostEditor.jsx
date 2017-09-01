@@ -1,13 +1,40 @@
 import React, { Component } from 'react';
 
-const PostEditor = (props) => (
-    <div className="panel panel-default post-editor">
-          <div className="panel-body">
-            <textarea className="form-control post-editor-input" value={this.state.newPostBody} onChange={this.handlePostEditorInputChange}/>
-            <button className="btn btn-success post-editor-button" onClick={this.addPost}>Post</button>
+
+class PostEditor extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            newPostBody: '',
+        };
+
+        this.handlePostEditorInputChange = this.handlePostEditorInputChange.bind(this);
+}
+
+handlePostEditorInputChange(ev) {
+    this.createPost = this.createPost.bind(this);
+    this.setState({
+    newPostBody: ev.target.value
+  })
+}
+
+createPost() {
+
+}
+
+
+    render() {
+        return (
+        <div className="panel panel-default post-editor">
+            <div className="panel-body">
+                <textarea className="form-control post-editor-input" value={this.state.newPostBody} onChange={this.handlePostEditorInputChange}/>
+                <button className="btn btn-success post-editor-button" onClick={this.props.addPost}>Post</button>
+            </div>
         </div>
-    </div>
-);
+        )
+    }
+}
 
 export default PostEditor;
         

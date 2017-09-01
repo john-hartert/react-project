@@ -8,28 +8,20 @@ class App extends Component {
     super(props);
 
     this.addPost = this.addPost.bind(this);
-    this.handlePostEditorInputChange = this.handlePostEditorInputChange.bind(this);
     
     this.state = {
       posts: [],
-      newPostBody: '',
     }
   }
  
 
-addPost() {
+addPost(newPostBody) {
   const newState = Object.assign([], this.state);
-  newState.posts.push(this.state.newPostBody);
-  newState.newPostBody = '';
+  newState.posts.push(newPostBody);
   this.setState(newState);
 
 }
 
-handlePostEditorInputChange(ev) {
-  this.setState({
-    newPostBody: ev.target.value
-  })
-}
 
 
   render() {
