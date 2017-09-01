@@ -5,9 +5,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div className="panel panel-defauly">
-          <div className="panel-body">
-            
+        <div className="panel panel-default">
+          <div className="panel-body output-display">
+            Here is the input
           </div>
         </div>
         <div className="panel panel-default post-editor">

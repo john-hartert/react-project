@@ -7,6 +7,9 @@
   float: right;
 }
 
+.output-display {
+  margin: 1em;
+}
 
 @media screen and (max-width: 900px) {
   .post-editor{
