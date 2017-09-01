@@ -5,12 +5,15 @@ class App extends Component {
   render() {
     return (
       <div>
-        {/* The .panel-default class is used to style 
-        the color of the panel. */}
+        <div className="panel panel-defauly">
+          <div className="panel-body">
+            
+          </div>
+        </div>
         <div className="panel panel-default post-editor">
           <div className="panel-body">
-            <textarea className="form-control" />
-            <button className="btn btn-success">Post</button>
+            <textarea className="form-control post-editor-input" />
+            <button className="btn btn-success post-editor-button">Post</button>
           </div>
         </div>
       </div>
