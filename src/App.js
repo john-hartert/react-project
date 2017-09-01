@@ -9,7 +9,8 @@ class App extends Component {
         the color of the panel. */}
         <div className="panel panel-default post-editor">
           <div className="panel-body">
-            Hello World
+            <textarea />
+            <button className="btn btn-success">Post</button>
           </div>
         </div>
       </div>
