@@ -4,8 +4,14 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        Hello World
+      <div>
+        {/* The .panel-default class is used to style 
+        the color of the panel. */}
+        <div className="panel panel-default post-editor">
+          <div className="panel-body">
+            Hello World
+          </div>
+        </div>
       </div>
     );
   }
