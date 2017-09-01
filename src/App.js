@@ -15,7 +15,7 @@ class App extends Component {
       newPostBody: '',
     }
   }
-
+ 
 
 addPost() {
   const newState = Object.assign([], this.state);
@@ -55,3 +55,4 @@ handlePostEditorInputChange(ev) {
 }
 
 export default App;
+
